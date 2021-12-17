@@ -2,6 +2,7 @@ package com.saraya.DakarTechUniversity.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;  
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,12 +17,9 @@ public class UniversityController {
 	private ContactService contactService;
 	
 	
-	@PostMapping(path="/contact",consumes="application/json")
-	public void register(@RequestParam("firstName") String firstName,@RequestParam String lastName,
-			@RequestParam String email,@RequestParam int phoneNumber,@RequestParam String degreeLevel,
-			@RequestParam String interest) {
+	@PostMapping(path="/contact")
+	public void register(@RequestBody Contact contact) {
 		 
-		Contact contact = new Contact(firstName,lastName,email,phoneNumber,degreeLevel,interest);
 		contactService.register(contact);
 		
 		
