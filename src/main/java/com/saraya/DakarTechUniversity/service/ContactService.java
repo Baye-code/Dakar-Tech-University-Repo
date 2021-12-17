@@ -1,13 +1,17 @@
 package com.saraya.DakarTechUniversity.service;
 
-import org.springframework.beans.factory.annotation.Autowired;  
+import org.springframework.beans.factory.annotation.Autowired;   
 import org.springframework.stereotype.Service;
 
-import com.saraya.DakarTechUniversity.model.Contact;
+
 import com.saraya.DakarTechUniversity.email.EmailSender;
 import com.saraya.DakarTechUniversity.email.EmailValidator;
+import com.saraya.DakarTechUniversity.model.Contact;
+
+import lombok.AllArgsConstructor;
 
 @Service("contactService")
+@AllArgsConstructor
 public class ContactService {
 	
 	@Autowired
@@ -17,7 +21,7 @@ public class ContactService {
     private  EmailValidator emailValidator;
 	
 	
-	public void register(Contact contact) {
+	public void register( Contact contact) {
 		
 		boolean isValidEmail = emailValidator.
                 test(contact.getEmail());
@@ -62,7 +66,7 @@ public class ContactService {
                 "          </tr>\n" +
                 "        </tbody></table>\n" +
                 "        \n" +
-                "      </td>\n" +
+                "      </td>\n" + 
                 "    </tr>\n" +
                 "  </tbody></table>\n" +
                 "  <table role=\"presentation\" class=\"m_-6186904992287805515content\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"border-collapse:collapse;max-width:580px;width:100%!important\" width=\"100%\">\n" +
@@ -91,7 +95,7 @@ public class ContactService {
                 "      <td width=\"10\" valign=\"middle\"><br></td>\n" +
                 "      <td style=\"font-family:Helvetica,Arial,sans-serif;font-size:19px;line-height:1.315789474;max-width:560px\">\n" +
                 "        \n" +
-                "            <p style=\"Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c\">Hi " + firstName + ",</p><p style=\"Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c\"> Thank you for registering. Please click on the below link to activate your account: </p><blockquote style=\"Margin:0 0 20px 0;border-left:10px solid #b1b4b6;padding:15px 0 0.1px 15px;font-size:19px;line-height:25px\"><p style=\"Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c\">  </p></blockquote>\n Link will expire in 15 minutes. <p>See you soon</p>" +
+                "            <p style=\"Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c\">Hi ,</p><p style=\"Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c\"> Thank you for registering. Please click on the below link to activate your account: </p><blockquote style=\"Margin:0 0 20px 0;border-left:10px solid #b1b4b6;padding:15px 0 0.1px 15px;font-size:19px;line-height:25px\"><p style=\"Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c\">  </p></blockquote>\n Link will expire in 15 minutes. <p>See you soon</p>" +
                 "        \n" +
                 "      </td>\n" +
                 "      <td width=\"10\" valign=\"middle\"><br></td>\n" +

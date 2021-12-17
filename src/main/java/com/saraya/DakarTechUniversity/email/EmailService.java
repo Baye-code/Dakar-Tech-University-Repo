@@ -10,11 +10,14 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
+import lombok.AllArgsConstructor;
+
 
 @Service("emailSender")
+@AllArgsConstructor
 public class EmailService implements EmailSender{
 	
-	
+	@Autowired
 	private JavaMailSender mailSender;
 	@Autowired
     private final static Logger LOGGER = LoggerFactory
@@ -29,8 +32,8 @@ public class EmailService implements EmailSender{
                     new MimeMessageHelper(mimeMessage, "utf-8");
             helper.setText(email, true);
             helper.setTo(to);
-            helper.setSubject("Confirm your email");
-            helper.setFrom("laye195@gmail.com");
+            helper.setSubject("Request information");
+            helper.setFrom("layendiaye195@gmail.com");
             mailSender.send(mimeMessage);
         } catch (MessagingException e) {
             LOGGER.error("failed to send email", e);
