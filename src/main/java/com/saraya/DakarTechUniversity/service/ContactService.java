@@ -1,6 +1,6 @@
 package com.saraya.DakarTechUniversity.service;
 
-import org.springframework.beans.factory.annotation.Autowired;   
+import org.springframework.beans.factory.annotation.Autowired;    
 import org.springframework.stereotype.Service;
 
 
@@ -8,10 +8,9 @@ import com.saraya.DakarTechUniversity.email.EmailSender;
 import com.saraya.DakarTechUniversity.email.EmailValidator;
 import com.saraya.DakarTechUniversity.model.Contact;
 
-import lombok.AllArgsConstructor;
+
 
 @Service("contactService")
-@AllArgsConstructor
 public class ContactService {
 	
 	@Autowired
@@ -39,7 +38,7 @@ public class ContactService {
 	
 	
 	
-	private String buildEmail(String firstName,String lastName, int phoneNumber,String niveau,String interest) {
+	private String buildEmail(String firstName,String lastName, int phoneNumber,String level,String interest) {
 		return "<div style=\"font-family:Helvetica,Arial,sans-serif;font-size:16px;margin:0;color:#0b0c0c\">\n" +
                 "\n" +
                 "<span style=\"display:none;font-size:1px;color:#fff;max-height:0\"></span>\n" +
@@ -57,7 +56,7 @@ public class ContactService {
                 "                  \n" +
                 "                    </td>\n" +
                 "                    <td style=\"font-size:28px;line-height:1.315789474;Margin-top:4px;padding-left:10px\">\n" +
-                "                      <span style=\"font-family:Helvetica,Arial,sans-serif;font-weight:700;color:#ffffff;text-decoration:none;vertical-align:top;display:inline-block\">Confirm your email</span>\n" +
+                "                      <span style=\"font-family:Helvetica,Arial,sans-serif;font-weight:700;color:#ffffff;text-decoration:none;vertical-align:top;display:inline-block\">Request Information</span>\n" +
                 "                    </td>\n" +
                 "                  </tr>\n" +
                 "                </tbody></table>\n" +
@@ -95,7 +94,10 @@ public class ContactService {
                 "      <td width=\"10\" valign=\"middle\"><br></td>\n" +
                 "      <td style=\"font-family:Helvetica,Arial,sans-serif;font-size:19px;line-height:1.315789474;max-width:560px\">\n" +
                 "        \n" +
-                "            <p style=\"Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c\">Hi ,</p><p style=\"Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c\"> Thank you for registering. Please click on the below link to activate your account: </p><blockquote style=\"Margin:0 0 20px 0;border-left:10px solid #b1b4b6;padding:15px 0 0.1px 15px;font-size:19px;line-height:25px\"><p style=\"Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c\">  </p></blockquote>\n Link will expire in 15 minutes. <p>See you soon</p>" +
+                "            <p>firstName and lastName: "+firstName+" "+lastName+"</p>\n"+
+                "            <p>PhoneNumber: "+phoneNumber+" </p>\n"+
+                "            <p>Level: "+level+" </p>\n"+
+                "            <p>Programme Interest: "+interest+" </p>"+
                 "        \n" +
                 "      </td>\n" +
                 "      <td width=\"10\" valign=\"middle\"><br></td>\n" +
