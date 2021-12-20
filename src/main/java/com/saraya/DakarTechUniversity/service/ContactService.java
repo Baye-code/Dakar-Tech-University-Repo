@@ -3,18 +3,17 @@ package com.saraya.DakarTechUniversity.service;
 import org.springframework.beans.factory.annotation.Autowired;    
 import org.springframework.stereotype.Service;
 
-
-import com.saraya.DakarTechUniversity.email.EmailSender;
+import com.saraya.DakarTechUniversity.email.EmailContactService;
 import com.saraya.DakarTechUniversity.email.EmailValidator;
 import com.saraya.DakarTechUniversity.model.Contact;
 
 
 
-@Service("contactService")
+@Service
 public class ContactService {
 	
 	@Autowired
-	private EmailSender emailSender;
+	private EmailContactService emailContactService;
 	
 	@Autowired
     private  EmailValidator emailValidator;
@@ -29,7 +28,7 @@ public class ContactService {
             throw new IllegalStateException("email not valid");
         }
 		
-		emailSender.send(contact.getEmail(), buildEmail(contact.getFirstName(),contact.getLastName(),
+		emailContactService.send(contact.getEmail(), buildEmail(contact.getFirstName(),contact.getLastName(),
 				  contact.getPhoneNumber(),contact.getDegreeLevel(),contact.getInterest()));
 	}
 	

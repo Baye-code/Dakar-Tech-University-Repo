@@ -17,7 +17,7 @@ public class UniversityController {
 	
 	
 	
-	@PostMapping(path="/contact")
+	@PostMapping(path="/api/contact")
 	public void register(@RequestBody Contact contact) {
 		 
 		contactService.register(contact);
