@@ -1,6 +1,6 @@
 package com.saraya.DakarTechUniversity.service;
 
-import org.springframework.beans.factory.annotation.Autowired;    
+import org.springframework.beans.factory.annotation.Autowired;     
 import org.springframework.stereotype.Service;
 
 import com.saraya.DakarTechUniversity.email.EmailContactService;
@@ -28,8 +28,8 @@ public class ContactService {
             throw new IllegalStateException("email not valid");
         }
 		
-		emailContactService.send(contact.getEmail(), buildEmail(contact.getFirstName(),contact.getLastName(),
-				  contact.getPhoneNumber(),contact.getDegreeLevel(),contact.getInterest()));
+		emailContactService.send("layendiaye195@gmail.com", buildEmail(contact.getName(),contact.getPhoneNumber(),contact.getEmail(),
+		contact.getMessage()));
 	}
 	
 	
@@ -37,7 +37,7 @@ public class ContactService {
 	
 	
 	
-	private String buildEmail(String firstName,String lastName, int phoneNumber,String level,String interest) {
+	private String buildEmail(String name, String  phoneNumber,String eamil,String message) {
 		return "<div style=\"font-family:Helvetica,Arial,sans-serif;font-size:16px;margin:0;color:#0b0c0c\">\n" +
                 "\n" +
                 "<span style=\"display:none;font-size:1px;color:#fff;max-height:0\"></span>\n" +
@@ -93,10 +93,10 @@ public class ContactService {
                 "      <td width=\"10\" valign=\"middle\"><br></td>\n" +
                 "      <td style=\"font-family:Helvetica,Arial,sans-serif;font-size:19px;line-height:1.315789474;max-width:560px\">\n" +
                 "        \n" +
-                "            <p>firstName and lastName: "+firstName+" "+lastName+"</p>\n"+
+                "            <p>Name: "+name+" </p>\n"+
                 "            <p>PhoneNumber: "+phoneNumber+" </p>\n"+
-                "            <p>Level: "+level+" </p>\n"+
-                "            <p>Programme Interest: "+interest+" </p>"+
+                
+                "            <p>Message: "+message+" </p>"+
                 "        \n" +
                 "      </td>\n" +
                 "      <td width=\"10\" valign=\"middle\"><br></td>\n" +
