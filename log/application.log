@@ -1,0 +1,63 @@
+2021-12-20 08:43:31.152  INFO 10368 --- [restartedMain] com.saraya.app.DtuWebappApplication      : Starting DtuWebappApplication using Java 16.0.2 on DESKTOP-F5LE87N with PID 10368 (C:\Users\Ahmad Tidiani\jetbrains_workspace\DTU-webapp\target\classes started by Ahmad Tidiani in C:\Users\Ahmad Tidiani\jetbrains_workspace\DTU-webapp)
+2021-12-20 08:43:31.155  INFO 10368 --- [restartedMain] com.saraya.app.DtuWebappApplication      : No active profile set, falling back to default profiles: default
+2021-12-20 08:43:31.660  INFO 10368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-20 08:43:31.709  INFO 10368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-20 08:43:34.209  INFO 10368 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-20 08:43:34.544  INFO 10368 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 306 ms. Found 2 JPA repository interfaces.
+2021-12-20 08:43:36.824  INFO 10368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-20 08:43:36.870  INFO 10368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-20 08:43:36.873  INFO 10368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-20 08:43:37.379  INFO 10368 --- [restartedMain] o.a.c.c.C.[.[.[/dtu-university]          : Initializing Spring embedded WebApplicationContext
+2021-12-20 08:43:37.407  INFO 10368 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5672 ms
+2021-12-20 08:43:38.174  INFO 10368 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-20 08:43:38.305  INFO 10368 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-20 08:43:38.583  INFO 10368 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-20 08:43:38.767  INFO 10368 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-20 08:43:39.727  INFO 10368 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-20 08:43:39.784  INFO 10368 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-20 08:44:03.683  INFO 10368 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-20 08:44:03.723  INFO 10368 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-20 08:44:04.760  WARN 10368 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-20 08:44:05.453  INFO 10368 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-20 08:44:05.512  INFO 10368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/dtu-university'
+2021-12-20 08:44:05.530  INFO 10368 --- [restartedMain] com.saraya.app.DtuWebappApplication      : Started DtuWebappApplication in 36.186 seconds (JVM running for 40.538)
+2021-12-20 08:46:37.484  INFO 10368 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-20 08:46:37.493  INFO 10368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-20 08:46:37.574  INFO 10368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-20 09:15:41.758  INFO 464 --- [restartedMain] com.saraya.app.DtuWebappApplication      : Starting DtuWebappApplication using Java 16.0.2 on DESKTOP-F5LE87N with PID 464 (C:\Users\Ahmad Tidiani\jetbrains_workspace\DTU-webapp\target\classes started by Ahmad Tidiani in C:\Users\Ahmad Tidiani\jetbrains_workspace\DTU-webapp)
+2021-12-20 09:15:41.760  INFO 464 --- [restartedMain] com.saraya.app.DtuWebappApplication      : No active profile set, falling back to default profiles: default
+2021-12-20 09:15:42.008  INFO 464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-20 09:15:42.010  INFO 464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-20 09:15:43.774  INFO 464 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-20 09:15:43.944  INFO 464 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146 ms. Found 3 JPA repository interfaces.
+2021-12-20 09:15:45.563  INFO 464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-20 09:15:45.590  INFO 464 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-20 09:15:45.591  INFO 464 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-20 09:15:45.854  INFO 464 --- [restartedMain] o.a.c.c.C.[.[.[/dtu-university]          : Initializing Spring embedded WebApplicationContext
+2021-12-20 09:15:45.856  INFO 464 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3844 ms
+2021-12-20 09:15:46.295  INFO 464 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-20 09:15:46.433  INFO 464 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-20 09:15:46.707  INFO 464 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-20 09:15:46.891  INFO 464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-20 09:15:47.585  INFO 464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-20 09:15:47.625  INFO 464 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-12-20 09:15:50.480  INFO 464 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-20 09:15:50.495  INFO 464 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-20 09:15:51.528  WARN 464 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-20 09:15:52.356  INFO 464 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-20 09:15:52.416  INFO 464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/dtu-university'
+2021-12-20 09:15:52.435  INFO 464 --- [restartedMain] com.saraya.app.DtuWebappApplication      : Started DtuWebappApplication in 11.777 seconds (JVM running for 13.484)
+2021-12-20 09:17:02.855  INFO 464 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/dtu-university]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-20 09:17:02.856  INFO 464 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-20 09:17:02.859  INFO 464 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-12-20 09:22:06.882  WARN 464 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "add"]
+2021-12-20 09:23:42.639  WARN 464 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "add"]
+2021-12-20 09:24:21.380  WARN 464 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "add"]
+2021-12-20 09:27:15.212  WARN 464 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "add"]
+2021-12-20 09:27:33.390  WARN 464 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "add"]
+2021-12-20 09:27:43.005  WARN 464 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2021-12-20 09:38:20.112  WARN 464 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2021-12-20 09:39:00.552  WARN 464 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "add"]
+2021-12-20 09:39:35.915  INFO 464 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-20 09:39:35.923  INFO 464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-20 09:39:35.943  INFO 464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

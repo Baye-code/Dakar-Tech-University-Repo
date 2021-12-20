@@ -25,8 +25,8 @@ public class Instructor {
 	
 	@Column(name = "speciality", nullable = false)
 	private String speciality;
-	
-	@Column(name = "creationTime", nullable = false)
-	private LocalDateTime creationTime;
+
+	@Column(name = "profile_photo", nullable = false)
+	private String profilePhoto;
 
 }
